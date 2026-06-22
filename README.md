@@ -19,15 +19,16 @@ local-first, or it doesn't ship.
 
 ### shipping & done
 
-- **[Atrium](https://github.com/VirInvictus/Atrium)** · native gnome task manager. org-mode internals (uuids, plain-text round-trip) under a Things 3 / OmniFocus surface, with a calibre-style search grammar. `Rust · GTK4` · *shipping v0.37.4*
+- **[Atrium](https://github.com/VirInvictus/Atrium)** · native gnome task manager. org-mode internals (uuids, plain-text round-trip) under a Things 3 / OmniFocus surface, with a calibre-style search grammar. `Rust · GTK4` · *shipping v0.41.1*
+- **[Framework](https://github.com/VirInvictus/Framework)** · native gnome document viewer for pdf, djvu, comics, and ebooks. mupdf and djvulibre under the fixed-layout formats; epub and mobi reflow natively through webkitgtk. `C · GTK4` · *shipping v0.77.0*
 - **[Lattice](https://github.com/VirInvictus/Lattice)** · cli for music collectors. library trees, integrity checks, cover and tag audits. the filesystem is the source of truth. `Python` · *complete v4.8.1*
-- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · reads a calibre `metadata.db` raw, in read-only. catalogs, audits, exports. no `calibredb`, no dependencies. `Python · stdlib` · *complete v3.0.0*
+- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · reads a calibre `metadata.db` raw, in read-only. catalogs, audits, exports. no `calibredb`, no dependencies. `Python · stdlib` · *complete v3.1.0*
 - **[deadbeef-cui](https://github.com/VirInvictus/deadbeef-cui)** · faceted, foobar2000-columns library browser plugin for the DeaDBeeF player. `C` · *complete v1.3.3*
 
 ### in the workshop
 
+- **[Conservatory](https://github.com/VirInvictus/Conservatory)** · calibre for audio. a native gnome manager that owns and moves your music, podcasts, and audiobooks on disk, all played from one libmpv queue. sqlite is the source of truth. `Rust · GTK4`
 - **[Viaduct](https://github.com/VirInvictus/Viaduct)** · netnewswire ported to linux. single-writer sqlite, opml on disk, hard memory ceilings. `Rust`
-- **[Framework](https://github.com/VirInvictus/Framework)** · keyboard-first document viewer (pdf, djvu, comics, epub) on mupdf + djvulibre. `C`
 - **[Hermitage](https://github.com/VirInvictus/Hermitage)** · read-only gallery browser for calibre libraries. `Python`
 - **[Bindery](https://github.com/VirInvictus/Bindery)** + **[oceanstrip](https://github.com/VirInvictus/oceanstrip)** · repair broken epubs and strip store watermarks, epubcheck-clean. `Python · stdlib`
 
