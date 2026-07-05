@@ -28,6 +28,7 @@ local-first, or it doesn't ship.
 - **[deadbeef-cui](https://github.com/VirInvictus/deadbeef-cui)** · faceted, foobar2000-columns library browser plugin for the DeaDBeeF player. `C` · *complete v1.3.3*
 - **[Dead Reckoning](https://github.com/VirInvictus/dead-reckoning-bookend-preset)** · navigation-cockpit preset for koreader's bookends plugin: session pace, chapter eta, projected finish date, chapter ticks on the progress bar. `Lua` · *complete*
 - **[Kobo-style Sleepscreen Banner](https://github.com/VirInvictus/2-kobo-style-sleepscreen-banner-prettified)** · koreader user patch: redraws the sleep screen as a kobo-style floating card over your cover, with a random highlight as a pull-quote. a prettified fork of zenixlabs' patch. `Lua` · *complete*
+- **[1-timezone](https://github.com/VirInvictus/1-timezone)** · koreader user patch: forces a correct posix timezone inside the process (`setenv` + `tzset`), fixing the clock, time sync, and autowarmth on framework-less installs where no `TZ` is set. `Lua` · *complete*
 
 ### in the workshop
 
@@ -38,7 +39,7 @@ local-first, or it doesn't ship.
 - **[Bindery](https://github.com/VirInvictus/Bindery)** + **[oceanstrip](https://github.com/VirInvictus/oceanstrip)** · repair broken epubs and strip producer watermarks, epubcheck-clean. `Python · stdlib`
 - **Hearth** + **Haveli** · two-player, lan-only, offline digital board games on content-agnostic deterministic engines. hidden hands force a host-authoritative, per-seat-redacted network model. private while in development. `Godot · GDScript`
 
-the full twenty-one, with screenshots and the long writeups, live in the codex →
+the full twenty-two, with screenshots and the long writeups, live in the codex →
 **[virinvictus.github.io](https://virinvictus.github.io)**
 
 ### elsewhere
