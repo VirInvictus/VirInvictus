@@ -21,7 +21,7 @@ local-first, or it doesn't ship.
 
 - **[Atrium](https://github.com/VirInvictus/Atrium)** · native gnome task manager. org-mode internals (uuids, plain-text round-trip) under a Things 3 / OmniFocus surface, with a calibre-style search grammar. `Rust · GTK4` · *shipping v0.46.2*
 - **[Framework](https://github.com/VirInvictus/Framework)** · tiling-first document viewer for pdf, djvu, comics, and ebooks. plain gtk4 under an owned kanagawa dragon stylesheet. mupdf and djvulibre under the fixed-layout formats; epub and mobi reflow natively through webkitgtk. `C · GTK4` · *shipping v0.80.0*
-- **[Viaduct](https://github.com/VirInvictus/Viaduct)** · netnewswire ported to linux. single-writer sqlite, opml on disk, hard memory ceilings. past 1.0, tracking upstream. `Rust · GTK4` · *shipping v2.8.2*
+- **[Viaduct](https://github.com/VirInvictus/Viaduct)** · netnewswire ported to linux. single-writer sqlite, opml on disk, hard memory ceilings. dropped libadwaita in v3.0.0 for its own flat design; runs on gnome, hyprland, and any wayland desktop. `Rust · GTK4` · *shipping v3.0.0*
 - **[Colophon](https://github.com/VirInvictus/Colophon)** · native statistics viewer for koreader. imports a copy of `statistics.sqlite3`, draws its own cairo charts, ships the reading analytics nobody else has. `Rust · GTK4` · *shipping v2.0.1*
 - **[Lattice](https://github.com/VirInvictus/Lattice)** · cli for music collectors. library trees, integrity checks, cover and tag audits. the filesystem is the source of truth. `Python` · *complete v4.10.1*
 - **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · reads a calibre `metadata.db` raw, in read-only. catalogs, audits, exports. no `calibredb`, no dependencies. `Python · stdlib` · *complete v3.6.0*
