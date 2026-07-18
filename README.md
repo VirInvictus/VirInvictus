@@ -37,11 +37,12 @@ local-first, or it doesn't ship.
 - **[Hermitage](https://github.com/VirInvictus/Hermitage)** · read-only gallery browser for calibre libraries. `Python`
 - **[calibre-web-kanagawa](https://github.com/VirInvictus/calibre-web-kanagawa)** · kanagawa dragon theme + curated read-only configuration for calibre-web: a web front-end that feels like a reading room, not a dashboard. code rides in a companion fork, [calibre-web-smallscope](https://github.com/VirInvictus/calibre-web-smallscope). `CSS · Python`
 - **[AudiobookTools](https://github.com/VirInvictus/AudiobookTools)** · declarative tag-and-folder normalizer for an audiobook shelf. one catalogue drives both the embedded tags and the on-disk tree; dry-run by default, every apply reversible. `Python`
+- **[rd-cli](https://github.com/VirInvictus/rd-cli)** · dependency-free cli for raindrop.io *and* pinboard. full rest api coverage over stdlib `urllib`; designed ansi for humans and `--json` for scripts and agents, typed errors, rate-limit backoff, `--dry-run` on every write, and a two-way additive `rd sync` between the two services that dedups on a normalized url. `Python · stdlib`
 - **[Bindery](https://github.com/VirInvictus/Bindery)** + **[oceanstrip](https://github.com/VirInvictus/oceanstrip)** · repair broken epubs and strip producer watermarks, epubcheck-clean. `Python · stdlib`
 - **Hearth** + **Haveli** · two-player, lan-only, offline digital board games on content-agnostic deterministic engines. hidden hands force a host-authoritative, per-seat-redacted network model. private while in development. `Godot · GDScript`
 - **[Coffer](https://github.com/VirInvictus/Coffer)** · envelope budgeting over a plain-text hledger journal. actual budget's experience, hledger's data discipline; the journal is the database. atrium's sibling, for money. research stage. `Rust · GTK4`
 
-the full twenty-four, with screenshots and the long writeups, live in the codex →
+the full twenty-five, with screenshots and the long writeups, live in the codex →
 **[virinvictus.github.io](https://virinvictus.github.io)**
 
 ### elsewhere
