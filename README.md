@@ -71,8 +71,8 @@ the full thirty, with screenshots and the long writeups, live in the codex →
 
 if any of this is useful to you and you'd like to chip in:
 
-```
-bc1qkge6zr45tzqfwfmvma2ylumt6mg7wlwmhr05yv
-```
-
-https://liberapay.com/bdkl/
+- liberapay · [liberapay.com/bdkl](https://liberapay.com/bdkl/)
+- bitcoin
+  ```
+  bc1qkge6zr45tzqfwfmvma2ylumt6mg7wlwmhr05yv
+  ```
