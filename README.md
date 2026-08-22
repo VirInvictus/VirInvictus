@@ -19,7 +19,7 @@ local-first, or it doesn't ship.
 
 ### shipping & done
 
-- **[Bindery](https://github.com/VirInvictus/Bindery)** + **[oceanstrip](https://github.com/VirInvictus/oceanstrip)** + **[audit_epub](https://github.com/VirInvictus/audit_epub)** · comprehensively audit and repair broken epubs, strip producer watermarks, and scan for leaked HTML tags. epubcheck-clean. `Python · stdlib` · *complete v0.11.0*
+- **[Bindery](https://github.com/VirInvictus/Bindery)** + **[audit_epub](https://github.com/VirInvictus/audit_epub)** · comprehensively audit and repair broken epubs, strip producer watermarks, and scan for leaked HTML tags. epubcheck-clean. `Python · stdlib` · *complete v0.12.0*
 - **[Atrium](https://github.com/VirInvictus/Atrium)** · native linux task manager. org-mode internals (uuids, plain-text round-trip) under a Things 3 / OmniFocus surface, with a calibre-style search grammar. dropped libadwaita for its own kanagawa dragon stylesheet on plain gtk4. `Rust · GTK4` · *shipping v0.69.2*
 - **[Framework](https://github.com/VirInvictus/Framework)** · tiling-first document viewer for pdf, djvu, comics, and ebooks. plain gtk4 under an owned kanagawa dragon stylesheet, portal-driven dark/light. mupdf and djvulibre under the fixed-layout formats; epub, mobi, and azw3 reflow natively through webkitgtk, keeping their publisher stylesheets. `C · GTK4` · *shipping v0.82.0*
 - **[Viaduct](https://github.com/VirInvictus/Viaduct)** · netnewswire ported to linux. single-writer sqlite, opml on disk, hard memory ceilings. dropped libadwaita in v3.0.0 for its own flat design; runs on gnome, hyprland, and any wayland desktop. `Rust · GTK4` · *shipping v3.2.1*
