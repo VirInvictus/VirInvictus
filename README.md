@@ -21,15 +21,15 @@ local-first, or it doesn't ship.
 
 ### books & calibre
 
-- **[Bindery](https://github.com/VirInvictus/Bindery)** · comprehensively audit and repair broken epubs with a lightning-fast persistent Java daemon. native calibre db integration, lossy watermark stripping, and safe HTML tag unwrapping. epubcheck-clean. `Python · tqdm` · *complete v0.14.0*
+- **[Bindery](https://github.com/VirInvictus/Bindery)** · comprehensively audit and repair broken epubs with a lightning-fast persistent Java daemon. native calibre db integration through `cquarry`, lossy watermark stripping, safe HTML tag unwrapping, and content damage flagging (ocr, foreign language). epubcheck-clean. `Python · tqdm` · *complete v0.14.0*
 - **[Carrel](https://github.com/VirInvictus/Carrel)** · a single-user reading room for one curated calibre library. no login, `metadata.db` attached read-only at the connection, and calibre's own search grammar where upstream had none: `author:"King"` used to return 0 results, now 55. wings, a hierarchical category browser, ctrl-k over 6,975 destinations, and live statistics. code rides in a companion fork, [Carrel-calibre-web](https://github.com/VirInvictus/Carrel-calibre-web). `Python · CSS` · *shipping v0.9.2*
-- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · reads a calibre `metadata.db` raw, in read-only. catalogs, audits, exports. no `calibredb`, no dependencies. `Python · stdlib` · *complete v3.11.0*
-- **[Hermitage](https://github.com/VirInvictus/Hermitage)** · read-only gallery browser for calibre libraries. `Python`
-- **[audit_epub](https://github.com/VirInvictus/audit_epub)** · purely stdlib python cli that reads the raw html of `.epub` files to flag content problems (ocr damage, foreign language, empty text) that structural linters cannot catch. strictly read-only single decompression pass. `Python · stdlib` · *complete v1.1.0*
+- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · reads a calibre `metadata.db` raw, in read-only via `cquarry`. catalogs, audits, exports. no `calibredb`, no dependencies. `Python · stdlib` · *complete v3.11.0*
+- **[Hermitage](https://github.com/VirInvictus/Hermitage)** · read-only gallery browser for calibre libraries powered by `cquarry`. `Python`
+- **[cquarry](https://github.com/VirInvictus/cquarry)** · a lightweight, canonical python package providing read-only access to calibre's `metadata.db` and a full parser for calibre's search expression grammar. powers calibrequarry, hermitage, bindery, and carrel. `Python · stdlib` · *complete*
 
 ### music & audio
 
-- **[Conservatory](https://github.com/VirInvictus/Conservatory)** · calibre for audio. a native linux manager that owns and moves your music, podcasts, and audiobooks on disk, all played from one libmpv queue. sqlite is the source of truth. `Rust · GTK4`
+- **[Conservatory](https://github.com/VirInvictus/Conservatory)** · calibre for audio. a native linux manager that owns and moves your music, podcasts, and audiobooks on disk, all played from one libmpv queue. sqlite is the source of truth, with search via `vir-search` and UI styled by `vir-gtk`. `Rust · GTK4`
 - **[AudiobookTools](https://github.com/VirInvictus/AudiobookTools)** · declarative tag-and-folder normalizer for an audiobook shelf. one catalogue drives both the embedded tags and the on-disk tree; dry-run by default, every apply reversible. `Python`
 - **[Lattice](https://github.com/VirInvictus/Lattice)** · cli for music collectors. library trees, integrity checks, cover and tag audits. the filesystem is the source of truth. `Python` · *complete v4.14.0*
 - **[deadbeef-cui](https://github.com/VirInvictus/deadbeef-cui)** · faceted, foobar2000-columns library browser plugin for the DeaDBeeF player. `C` · *complete v1.3.3*
@@ -43,10 +43,11 @@ local-first, or it doesn't ship.
 
 ### applications
 
-- **[Atrium](https://github.com/VirInvictus/Atrium)** · native linux task manager. org-mode internals (uuids, plain-text round-trip) under a Things 3 / OmniFocus surface, with a calibre-style search grammar. dropped libadwaita for its own kanagawa dragon stylesheet on plain gtk4. `Rust · GTK4` · *shipping v0.69.2*
+- **[Atrium](https://github.com/VirInvictus/Atrium)** · native linux task manager. org-mode internals (uuids, plain-text round-trip) under a Things 3 / OmniFocus surface, with a calibre-style search grammar powered by `vir-search`. dropped libadwaita for its own kanagawa dragon stylesheet on plain gtk4 via `vir-gtk`. `Rust · GTK4` · *shipping v0.69.2*
 - **[Framework](https://github.com/VirInvictus/Framework)** · tiling-first document viewer for pdf, djvu, comics, and ebooks. plain gtk4 under an owned kanagawa dragon stylesheet, portal-driven dark/light. mupdf and djvulibre under the fixed-layout formats; epub, mobi, and azw3 reflow natively through webkitgtk, keeping their publisher stylesheets. `C · GTK4` · *shipping v0.82.0*
-- **[Viaduct](https://github.com/VirInvictus/Viaduct)** · netnewswire ported to linux. single-writer sqlite, opml on disk, hard memory ceilings. dropped libadwaita in v3.0.0 for its own flat design; runs on gnome, hyprland, and any wayland desktop. `Rust · GTK4` · *shipping v3.2.1*
+- **[Viaduct](https://github.com/VirInvictus/Viaduct)** · netnewswire ported to linux. single-writer sqlite, opml on disk, hard memory ceilings. dropped libadwaita in v3.0.0 for its own flat design via `vir-gtk` and search powered by `vir-search`; runs on gnome, hyprland, and any wayland desktop. `Rust · GTK4` · *shipping v3.2.1*
 - **[rd-cli](https://github.com/VirInvictus/rd-cli)** · dependency-free cli for raindrop.io *and* pinboard. full rest api coverage over stdlib `urllib`; designed ansi for humans and `--json` for scripts and agents, typed errors, rate-limit backoff, `--dry-run` on every write, blast-radius-gated confirmation prompts, and a two-way additive `rd sync` between the two services that dedups on a normalized url. `Python · stdlib`
+- **[vir-gtk](https://github.com/VirInvictus/vir-gtk)** · a standalone rust library extracting the shared gtk4 styling and d-bus portal interaction layer for atrium, conservatory, viaduct, and colophon. replaces libadwaita with a bespoke flat kanagawa-themed framework. `Rust · GTK4`
 
 ### games & engines
 
