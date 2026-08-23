@@ -25,6 +25,7 @@ local-first, or it doesn't ship.
 - **[Carrel](https://github.com/VirInvictus/Carrel)** · a single-user reading room for one curated calibre library. no login, `metadata.db` attached read-only at the connection, and calibre's own search grammar where upstream had none: `author:"King"` used to return 0 results, now 55. wings, a hierarchical category browser, ctrl-k over 6,975 destinations, and live statistics. code rides in a companion fork, [Carrel-calibre-web](https://github.com/VirInvictus/Carrel-calibre-web). `Python · CSS` · *shipping v0.9.2*
 - **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · reads a calibre `metadata.db` raw, in read-only. catalogs, audits, exports. no `calibredb`, no dependencies. `Python · stdlib` · *complete v3.11.0*
 - **[Hermitage](https://github.com/VirInvictus/Hermitage)** · read-only gallery browser for calibre libraries. `Python`
+- **[audit_epub](https://github.com/VirInvictus/audit_epub)** · purely stdlib python cli that reads the raw html of `.epub` files to flag content problems (ocr damage, foreign language, empty text) that structural linters cannot catch. strictly read-only single decompression pass. `Python · stdlib` · *complete v1.1.0*
 
 ### music & audio
 
