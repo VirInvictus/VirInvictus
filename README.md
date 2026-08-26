@@ -46,7 +46,7 @@ local-first, or it doesn't ship.
 ### shared libraries
 - **[cquarry](https://github.com/VirInvictus/cquarry)** · a lightweight, canonical python package providing read-only access to calibre's `metadata.db` and a full parser for calibre's search expression grammar. powers [CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry), [Hermitage](https://github.com/VirInvictus/Hermitage), [Bindery](https://github.com/VirInvictus/Bindery), and [Carrel](https://github.com/VirInvictus/Carrel). `Python · stdlib` · *complete*
 - **[vir-search](https://github.com/VirInvictus/vir-search)** · a shared rust library for parsing calibre-style search expressions into a typed AST. used by [Atrium](https://github.com/VirInvictus/Atrium) and [Conservatory](https://github.com/VirInvictus/Conservatory). `Rust` · *complete v1.0.1*
-- **[vir-tui](https://github.com/VirInvictus/vir-tui)** · a lightweight python library providing a robust terminal ui (curses grid menus, pagers, prompts) for CLI tools without the bloat of textual. used by CalibreQuarry and Lattice. `Python` · *complete v1.0.0*
+- **[vir-tui](https://github.com/VirInvictus/vir-tui)** · a lightweight python library providing a robust terminal ui (curses grid menus, pagers, prompts) for CLI tools without the bloat of textual. used by [CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry) and [Lattice](https://github.com/VirInvictus/Lattice). `Python` · *complete v1.0.0*
 - **[vir-gtk](https://github.com/VirInvictus/vir-gtk)** · a shared gtk4 styling library for native linux apps, extracting the Kanagawa theme engine. `Rust · GTK4` · *complete v1.0.1*
 
 ### games & engines
