@@ -20,24 +20,18 @@ compile-time boundaries over code-review rules.  hard ceilings over soft benchma
 local-first, or it doesn't ship.
 ```
 
-### desktop & utilities
+### applications
+- **[Viaduct](https://github.com/VirInvictus/Viaduct)** · a fast, local-first rss reader that treats articles as text, not web pages. An opinionated Rust port of NetNewsWire `Rust · GTK4` · *shipping v3.3.1*
 
-- **[Atrium](https://github.com/VirInvictus/Atrium)** · a local-first, native linux task manager built on the Getting Things Done philosophy. getting your life in order should not require a subscription, an electron app, or an active internet connection. built on a single-writer sqlite worker with search powered by `vir-search` and a clean `vir-gtk` interface. `Rust · GTK4` · *shipping v0.70.0*
-- **[Viaduct](https://github.com/VirInvictus/Viaduct)** · a fast, local-first rss reader that treats articles as text, not web pages. `Rust · GTK4` · *shipping v3.3.1*
-- **[vir-search](https://github.com/VirInvictus/vir-search)** · a shared rust library for parsing calibre-style search expressions into a typed AST. used by Atrium and Conservatory. `Rust` · *complete v1.0.1*
-- **[vir-tui](https://github.com/VirInvictus/vir-tui)** · a lightweight python library providing a robust terminal ui (curses grid menus, pagers, prompts) for CLI tools without the bloat of textual. used by CalibreQuarry and Lattice. `Python` · *complete v1.0.0*
-- **[vir-gtk](https://github.com/VirInvictus/vir-gtk)** · a shared gtk4 styling library for native linux apps, extracting the Kanagawa theme engine. `Rust · GTK4` · *complete v1.0.1*
+### books & calibre tooling
 
-### books & calibre
-
+- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · ultimately, a front-end for [cquarry](https://github.com/VirInvictus/cquarry). A handful of auditing and organizing tools for Calibre. `Python · tqdm` · *complete v3.19.0*
 - **[Bindery](https://github.com/VirInvictus/Bindery)** · comprehensively audit and repair broken epubs with a lightning-fast persistent Java daemon. native calibre db integration through `cquarry`, lossy watermark stripping, safe HTML tag unwrapping, and content damage flagging (ocr, foreign language). epubcheck-clean. `Python · tqdm` · *complete v0.14.0*
 - **[Carrel](https://github.com/VirInvictus/Carrel)** · a single-user reading room for one curated calibre library. no login, `metadata.db` attached read-only at the connection, and calibre's own search grammar where upstream had none: `author:"King"` used to return 0 results, now 55. wings, a hierarchical category browser, ctrl-k over 6,975 destinations, and live statistics. code rides in a companion fork, [Carrel-calibre-web](https://github.com/VirInvictus/Carrel-calibre-web). `Python · CSS` · *shipping v0.9.2*
-- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · reads a calibre `metadata.db` raw, in read-only via `cquarry`. catalogs, audits, exports. no `calibredb`, no dependencies. `Python · stdlib` · *complete v3.11.0*
-- **[cquarry](https://github.com/VirInvictus/cquarry)** · a lightweight, canonical python package providing read-only access to calibre's `metadata.db` and a full parser for calibre's search expression grammar. powers calibrequarry, hermitage, bindery, and carrel. `Python · stdlib` · *complete*
 
-### music & audio
 
-- **[Conservatory](https://github.com/VirInvictus/Conservatory)** · calibre for audio. a native linux manager that owns and moves your music, podcasts, and audiobooks on disk, all played from one libmpv queue. sqlite is the source of truth, with search via `vir-search` and UI styled by `vir-gtk`. `Rust · GTK4`
+### music & audio tooling
+
 - **[Lattice](https://github.com/VirInvictus/Lattice)** · cli for music collectors. library trees, integrity checks, cover and tag audits. the filesystem is the source of truth. `Python` · *complete v4.14.0*
 - **[deadbeef-cui](https://github.com/VirInvictus/deadbeef-cui)** · faceted, foobar2000-columns library browser plugin for the DeaDBeeF player. `C` · *complete v1.3.3*
 
@@ -47,6 +41,12 @@ local-first, or it doesn't ship.
 - **[Dead Reckoning](https://github.com/VirInvictus/dead-reckoning-bookend-preset)** · navigation-cockpit preset for koreader's bookends plugin: session pace, chapter eta, projected finish date, chapter ticks on the progress bar. `Lua` · *complete*
 - **[2-kobo-style-sleepscreen-banner-prettified](https://github.com/VirInvictus/2-kobo-style-sleepscreen-banner-prettified)** · koreader user patch: redraws the sleep screen as a kobo-style floating card over your cover, with a random highlight as a pull-quote. a prettified fork of zenixlabs' patch. `Lua` · *complete*
 - **[1-timezone](https://github.com/VirInvictus/1-timezone)** · koreader user patch: forces a correct posix timezone inside the process (`setenv` + `tzset`), fixing the clock, time sync, and autowarmth on framework-less installs where no `TZ` is set. `Lua` · *complete*
+
+### shared libraries
+- **[cquarry](https://github.com/VirInvictus/cquarry)** · a lightweight, canonical python package providing read-only access to calibre's `metadata.db` and a full parser for calibre's search expression grammar. powers [CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry), [Hermitage](https://github.com/VirInvictus/Hermitage), [Bindery](https://github.com/VirInvictus/Bindery), and [Carrel](https://github.com/VirInvictus/Carrel). `Python · stdlib` · *complete*
+- **[vir-search](https://github.com/VirInvictus/vir-search)** · a shared rust library for parsing calibre-style search expressions into a typed AST. used by [Atrium](https://github.com/VirInvictus/Atrium) and [Conservatory](https://github.com/VirInvictus/Conservatory). `Rust` · *complete v1.0.1*
+- **[vir-tui](https://github.com/VirInvictus/vir-tui)** · a lightweight python library providing a robust terminal ui (curses grid menus, pagers, prompts) for CLI tools without the bloat of textual. used by CalibreQuarry and Lattice. `Python` · *complete v1.0.0*
+- **[vir-gtk](https://github.com/VirInvictus/vir-gtk)** · a shared gtk4 styling library for native linux apps, extracting the Kanagawa theme engine. `Rust · GTK4` · *complete v1.0.1*
 
 ### games & engines
 
