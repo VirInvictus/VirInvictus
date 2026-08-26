@@ -22,6 +22,7 @@ local-first, or it doesn't ship.
 
 ### applications
 - **[Viaduct](https://github.com/VirInvictus/Viaduct)** · a fast, local-first rss reader that treats articles as text, not web pages. An opinionated Rust port of NetNewsWire `Rust · GTK4` · *shipping v3.3.1*
+- **[Conservatory](https://github.com/VirInvictus/Conservatory)** · my take on a calibre for audio. music, podcasts, and audiobooks - all through libmpv. far from finished but i like it `Rust · GTK4` · *shipping v0.4.1*
 
 ### books & calibre tooling
 
