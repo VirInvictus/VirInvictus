@@ -26,16 +26,21 @@ local-first, or it doesn't ship.
 - **[Framework](https://github.com/VirInvictus/Framework)** · high-performance, dual-engine document viewer (PDF, EPUB, CBR, Markdown). bypasses MuPDF's lack of thread-safety by spawning up to 8 isolated render instances with an atomic round-robin dispatcher. achieves zero-copy rendering by mapping MuPDF BGR bytes directly into Cairo/GTK4 surfaces. uses Linux Landlock LSM to sandbox WebKitGTK. `C17 · GTK4 · WebKitGTK` · *shipping v0.83.1*
 - **[Viaduct](https://github.com/VirInvictus/Viaduct)** · a fast, local-first rss reader that treats articles as text, not web pages. an opinionated linux port of NetNewsWire's engine. uses a strict single-writer SQLite worker alongside a concurrent read pool to ensure background syncs never stutter the timeline UI. RSS is constrained inside a neutered WebKit sandbox (no JS, strict CSP, custom URI interceptors). `Rust · GTK4 · WebKitGTK` · *shipping v3.7.3*
 - **[Conservatory](https://github.com/VirInvictus/Conservatory)** · "calibre for audio." inverts the player model to be database-canonical: the SQLite database owns the library, rendering folder templates and executing dry-run, undo-journaled filesystem moves. mutates libmpv audio filter graphs live to prevent clicking, and taps PipeWire for real-time FFT visualization. `Rust · GTK4 · libmpv` · *shipping v0.4.3*
+- **[Hermitage](https://github.com/VirInvictus/Hermitage)** · a visually immersive gallery browser for calibre libraries. reads `metadata.db` strictly read-only, thumbnails and colour-quantizes covers on a background thread, and ships as a flatpak. `Python · GTK4` · *shipping v1.8.0*
+- **[Topograph](https://github.com/VirInvictus/Topograph)** · a blazing-fast filesystem visualizer in the qdirstat tradition: gpu-accelerated qt6/qml over a rust scan core, styled in kanagawa dragon. `Rust · Qt6/QML (CXX-Qt)` · *shipping v0.2.4*
 
 ### domain tooling (python & cli)
 
-- **[cquarry](https://github.com/VirInvictus/cquarry)** · canonical calibre database layer. a headless engine providing read-only SQLite access (escaping write-locks safely) and a pure-python recursive-descent parser that faithfully ports Calibre's search grammar (AST evaluation, boolean logic, accent folding) with **zero external dependencies**. `Python · stdlib-only` · *shipping v1.11.1*
-- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · CLI/TUI front-end for `cquarry`. goes beyond wrapper scripts by implementing deep data mining: extracting literal copyright-page text from book binaries to verify database ISBNs against reality. `Python · vir-tui` · *shipping v3.26.0*
-- **[bindery-cli](https://github.com/VirInvictus/bindery-cli)** · deterministic EPUB repair tool. gates every modification behind W3C's `epubcheck` (using a persistent Java daemon to drop validation times from 5s to 0.05s). executes atomic `os.replace` filesystem writes, and features lossy watermark stripping protected by three strict safety nets (character conservation, tag balancing, and a `no_worse` check). `Python` · *shipping v0.28.0*
+- **[cquarry](https://github.com/VirInvictus/cquarry)** · canonical calibre database layer. a headless engine providing read-only SQLite access (escaping write-locks safely) and a pure-python recursive-descent parser that faithfully ports Calibre's search grammar (AST evaluation, boolean logic, accent folding) with **zero external dependencies**. `Python · stdlib-only` · *shipping v1.12.0*
+- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · CLI/TUI front-end for `cquarry`. goes beyond wrapper scripts by implementing deep data mining: extracting literal copyright-page text from book binaries to verify database ISBNs against reality. `Python · vir-tui` · *shipping v3.27.0*
+- **[bindery-cli](https://github.com/VirInvictus/bindery-cli)** · deterministic EPUB repair tool. gates every modification behind W3C's `epubcheck` and executes atomic `os.replace` filesystem writes, with lossy watermark stripping protected by three strict safety nets (character conservation, tag balancing, and a `no_worse` check). `Python` · *shipping v0.28.0*
 - **[raindrop-cli](https://github.com/VirInvictus/raindrop-cli)** · dependency-free Raindrop.io CLI. refuses heavy packages like `requests` or `rich`. hand-rolls `multipart/form-data` encoding, API rate-limiting, exponential backoff, and ANSI terminal rendering using only the Python standard library. `--dry-run` safety is strictly enforced at the lowest network layer. `Python · stdlib-only` · *shipping v0.6.0*
-- **[Carrel](https://github.com/VirInvictus/Carrel)** · a single-user reading room contract for a curated calibre library. enforces ok-lab accessible typography, disables upstream features via hooks to prevent merge conflicts, and owns its CSS entirely. code rides in a companion fork. `Python · CSS` · *shipping v0.9.7*
+- **[AudiobookTools](https://github.com/VirInvictus/AudiobookTools)** · declarative tag-and-folder normalizer for audiobook libraries. dry-run by default, reversible `--apply` with an undo journal; never re-encodes, never deletes audio. `Python · mutagen` · *shipping v0.2.0*
+- **[lattice-music](https://github.com/VirInvictus/lattice-music)** · CLI/TUI audit and visualization suite for music collections: ~20 read-only modes plus nine dry-run-first companion scripts. the filesystem is the source of truth; tags are never written outside those scripts. `Python · mutagen · vir-tui` · *complete v4.17.0*
+- **[dragon-agents](https://github.com/VirInvictus/dragon-agents)** · a local ZCode plugin shipping six read-only research subagents: repo cartography, doc-drift audits, downstream cascade checks, spec compliance, ci triage, and prose slop passes. `Markdown · Python` · *v0.1.1*
+- **[Carrel](https://github.com/VirInvictus/Carrel)** · a single-user reading room contract for a curated calibre library. enforces ok-lab accessible typography, disables upstream features via hooks to prevent merge conflicts, and owns its CSS entirely. code rides in the companion fork, [Carrel-calibre-web](https://github.com/VirInvictus/Carrel-calibre-web). `CSS · docs` · *shipping v0.9.7*
 
-### koreader & plugins
+### koreader & player plugins
 
 - **[Colophon](https://github.com/VirInvictus/Colophon)** · native statistics viewer for koreader. imports a copy of `statistics.sqlite3`, draws its own cairo charts, ships the reading analytics nobody else has. `Rust · GTK4` · *shipping v2.2.0*
 - **[Dead Reckoning](https://github.com/VirInvictus/dead-reckoning-bookend-preset)** · navigation-cockpit preset for koreader's bookends plugin: session pace, chapter eta, projected finish date. `Lua` · *complete*
@@ -45,13 +50,13 @@ local-first, or it doesn't ship.
 
 ### shared libraries & games
 
-- **[vir-search](https://github.com/VirInvictus/vir-search)** · a shared rust library parsing calibre-style search expressions into a typed AST. used by Atrium and Conservatory. `Rust` · *complete v1.4.0*
+- **[vir-search](https://github.com/VirInvictus/vir-search)** · a shared rust library parsing calibre-style search expressions into a typed AST. used by Atrium and Conservatory. `Rust` · *active v1.4.0*
 - **[vir-tui](https://github.com/VirInvictus/vir-tui)** · a lightweight python library providing a robust terminal ui (curses grid menus, pagers) without the bloat of textual. `Python` · *complete v2.3.0*
-- **[vir-gtk](https://github.com/VirInvictus/vir-gtk)** · a shared gtk4 styling library for native linux apps, extracting the Kanagawa theme engine. `Rust · GTK4` · *complete v1.0.3*
-- **[Hearthfall](https://github.com/VirInvictus/Hearthfall)** · grimdark clan-survival for the terminal. seasonal turns, a fog-black map. engine is stdlib-only pure logic with no i/o, driven from a single seeded rng. `Python · Textual`
-- **[opends](https://github.com/VirInvictus/opends)** · reverse-engineering toolkit for ssi's *dark sun* crpgs (1993–94). disassembler for undocumented gpl bytecode vm, plus gff/save editors. `Rust · Python`
+- **[vir-gtk](https://github.com/VirInvictus/vir-gtk)** · a shared gtk4 styling library for native linux apps, extracting the Kanagawa theme engine. `Rust · GTK4` · *active v1.0.3*
+- **[Hearthfall](https://github.com/VirInvictus/Hearthfall)** · grimdark clan-survival for the terminal. seasonal turns, a fog-black map. engine is stdlib-only pure logic with no i/o, driven from a single seeded rng. `Python · Textual` · *shipping v0.18.0*
+- **[opends](https://github.com/VirInvictus/opends)** · reverse-engineering toolkit for ssi's *dark sun* crpgs (1993–94): thirteen tools covering a disassembler for the undocumented gpl bytecode vm, gff/save editors, and exe map tooling. `Rust · Python`
 
-the full thirty, with screenshots and the long writeups, live in the codex →
+the full codex, with screenshots and the long writeups, live at →
 **[virinvictus.github.io](https://virinvictus.github.io)**
 
 ### elsewhere
