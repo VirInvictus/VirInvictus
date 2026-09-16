@@ -1,0 +1,19 @@
+# project.done
+
+- **Completion date:** 2026-09-16
+- **Executed by:** the VirInvictus profile repo agent of THE FINAL BLITZ; verified afterwards by the manager.
+- **Commit range:** a2370a4..765fc8e (the sweep), plus the project.done commit. No tags: a docs-only repo, and docs-only commits do not version-bump. Pushed and verified rendering live on github.com/VirInvictus.
+
+## What shipped
+
+- **The post-blitz version sweep (commit 765fc8e):** all 24 cards re-verified live from each repo's own version source (VERSION, Cargo.toml, meson.build, `__init__`/config.py, main.c, plugin.json), cross-checked against each repo's newest v-tag: the audit's own method re-run. 19 pins had drifted and were updated: Atrium v0.74.0 to v0.76.0, Framework v1.0.0 to v1.0.1, Viaduct v3.8.0 to v4.0.2, Conservatory v0.7.0 to v0.8.0, Hermitage v1.8.3 to v1.8.5, Topograph v0.3.1 to v0.3.2, cquarry v1.21.0 to v1.23.0, CalibreQuarry v3.42.0 to v3.45.0, bindery-cli v0.40.0 to v0.41.0, raindrop-cli v0.6.1 to v0.7.0, AudiobookTools v0.2.0 to v0.3.0, lattice-music v5.4.0 to v5.5.0, Carrel v0.9.9 to v0.9.10, Colophon v2.4.0 to v2.6.0, deadbeef-cui v1.3.4 to v1.3.5, vir-search v1.4.2 to v1.4.3, vir-tui v2.3.0 to v2.5.0, vir-gtk v1.4.0 to v1.4.2, Hearthfall v0.27.0 to v0.28.0. dragon-agents v0.1.1 verified unchanged. Three blitz releases were missing from the manager's summary list and were caught by reading sources (Conservatory 0.8.0, vir-gtk 1.4.2, lattice-music 5.5.0). Release prose re-checked against the notable bumps (Viaduct 4.0.0 app-id identity, Conservatory 0.8.0 restore hardening): no card claim invalidated. opends' "fourteen tools" and dragon-agents' "six" re-counted: both hold.
+- **The five audit LOWs (same commit; Brandon answered all five prompts, recommendations accepted):** the "robust" on the vir-tui card is dropped (the sentence runs on "lightweight" and "without the bloat"); preset/plugin version-tags surface where tags exist (2-kobo *complete v2.1.4*, 1-timezone *complete v1.0.0*, deadbeef-cui swept *complete v1.3.5*); dragon-agents reads *shipping v0.1.1*; opends reads *active*; the card-pattern polish item is those three status/depth changes together.
+- **Blitz-status fact refresh:** lattice's "~20 read-only modes" now reads "~25" (26 read-only mode flags in `src/lattice/cli.py` at v5.5.0; the old hedge was true at v5.4.0's 19).
+- **Rendered-profile verification (online):** github.com/VirInvictus fetched after the push; all 24 cards render the exact new pins, opends renders "active", dragon-agents renders "shipping v0.1.1". Hygiene: zero em-dashes, zero surrogates (the 1993-94 en-dash is correct numeric-range usage), 24 cards, all 22 version-bearing pins match live sources.
+
+## Reopen conditions
+
+- **Pinned repos (the one open item, and it is manual-only):** Brandon chose to mirror the desktop six: Atrium, Framework, Viaduct, Conservatory, Hermitage, Topograph. The GitHub GraphQL API has no profile-pin mutation (only pinIssue/pinIssueComment/pinEnvironment exist; checked live), so no agent can apply it: profile page, "Customize your pins", select the six. Until then the pins stay the six Python tools (lattice-music, bindery-cli, CalibreQuarry, Carrel-calibre-web, Colophon, raindrop-cli).
+- **Dead Reckoning's card** reads bare *complete* because the repo has no tags (v1.0.0 was pending at close). Surface *complete v1.0.0* on the card when that tag lands in dead-reckoning-bookend-preset (this repo's cross-repo grant is read-only).
+- **Foyer (v0.2.0) and Catagotchi (v4.44.0)** took their first tags/releases in the blitz, but both repos are PRIVATE (gh-verified 2026-09-16): no cards are possible on the public profile. Revisit only if either goes public.
+- **Next sweep trigger:** any future release batch of this size; pins were verified exact 2026-09-16 and will age again the same way.
