@@ -71,6 +71,7 @@ the full codex, with screenshots and the long writeups, live at →
 
 if any of this is useful to you and you'd like to chip in:
 
+- github sponsors · [github.com/sponsors/VirInvictus](https://github.com/sponsors/VirInvictus)
 - liberapay · [liberapay.com/bdkl](https://liberapay.com/bdkl/)
 - bitcoin
   ```
