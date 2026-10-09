@@ -44,6 +44,7 @@ local-first, or it doesn't ship.
 ### koreader & player plugins
 
 - **[Colophon](https://github.com/VirInvictus/Colophon)** · native statistics viewer for koreader. imports a copy of `statistics.sqlite3`, draws its own cairo charts, ships the reading analytics nobody else has. `Rust · GTK4` · *shipping v2.6.0*
+- **[saforums.koplugin](https://github.com/VirInvictus/saforums.koplugin)** · a koreader plugin that reads the something awful forums on e-ink: login with persisted cookies, forum index and bookmark shelf with unread counts, and continue-at-unread, all rendered as native koreader post cards. the site is scraped by a written contract, tested against synthetic fixtures; no posting, no clutter in the reading history. `Lua` · *active v0.2.0*
 - **[Dead Reckoning](https://github.com/VirInvictus/dead-reckoning-bookend-preset)** · navigation-cockpit preset for koreader's bookends plugin: session pace, chapter eta, projected finish date. `Lua` · *complete v1.0.0*
 - **[2-kobo-style-sleepscreen-banner-prettified](https://github.com/VirInvictus/2-kobo-style-sleepscreen-banner-prettified)** · koreader user patch: redraws the sleep screen as a kobo-style floating card over your cover. `Lua` · *complete v2.1.4*
 - **[1-timezone](https://github.com/VirInvictus/1-timezone)** · koreader user patch: forces a correct posix timezone inside the process (`setenv` + `tzset`), fixing the clock on framework-less installs. `Lua` · *complete v1.0.0*
