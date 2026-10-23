@@ -33,7 +33,7 @@ local-first, or it doesn't ship.
 ### domain tooling (python & cli)
 
 - **[cquarry](https://github.com/VirInvictus/cquarry)** · canonical calibre database layer. a headless engine providing read-only SQLite access (escaping write-locks safely) and a pure-python recursive-descent parser that faithfully ports Calibre's search grammar (AST evaluation, boolean logic, accent folding) with **zero external dependencies**. `Python · stdlib-only` · *shipping v1.28.0*
-- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · CLI/TUI front-end for `cquarry`. goes beyond wrapper scripts by implementing deep data mining: extracting literal copyright-page text from book binaries to verify database ISBNs against reality. `Python · vir-tui` · *shipping v3.71.0*
+- **[CalibreQuarry](https://github.com/VirInvictus/CalibreQuarry)** · CLI/TUI front-end for `cquarry`. goes beyond wrapper scripts by implementing deep data mining: extracting literal copyright-page text from book binaries to verify database ISBNs against reality. `Python · vir-tui` · *shipping v3.72.0*
 - **[bindery-cli](https://github.com/VirInvictus/bindery-cli)** · deterministic EPUB repair tool. gates every modification behind W3C's `epubcheck` and executes atomic `os.replace` filesystem writes, with lossy watermark stripping protected by three strict safety nets (character conservation, tag balancing, and a `no_worse` check). `Python` · *shipping v0.52.0*
 - **[raindrop-cli](https://github.com/VirInvictus/raindrop-cli)** · dependency-free Raindrop.io CLI. refuses heavy packages like `requests` or `rich`. hand-rolls `multipart/form-data` encoding, API rate-limiting, exponential backoff, and ANSI terminal rendering using only the Python standard library. `--dry-run` safety is strictly enforced at the lowest network layer. `Python · stdlib-only` · *complete v0.7.0*
 - **[AudiobookTools](https://github.com/VirInvictus/AudiobookTools)** · declarative tag-and-folder normalizer for audiobook libraries. dry-run by default, reversible `--apply` with an undo journal; never re-encodes, never deletes audio. `Python · mutagen` · *archived · complete at v0.3.0*
@@ -48,7 +48,7 @@ local-first, or it doesn't ship.
 - **[Dead Reckoning](https://github.com/VirInvictus/dead-reckoning-bookend-preset)** · navigation-cockpit preset for koreader's bookends plugin: session pace, chapter eta, projected finish date. `Lua` · *complete v1.0.0*
 - **[2-kobo-style-sleepscreen-banner-prettified](https://github.com/VirInvictus/2-kobo-style-sleepscreen-banner-prettified)** · koreader user patch: redraws the sleep screen as a kobo-style floating card over your cover. `Lua` · *complete v2.1.4*
 - **[1-timezone](https://github.com/VirInvictus/1-timezone)** · koreader user patch: forces a correct posix timezone inside the process (`setenv` + `tzset`), fixing the clock on framework-less installs. `Lua` · *complete v1.0.0*
-- **[deadbeef-cui](https://github.com/VirInvictus/deadbeef-cui)** · faceted, foobar2000-columns library browser plugin for the DeaDBeeF player. `C` · *complete v2.0.1*
+- **[deadbeef-cui](https://github.com/VirInvictus/deadbeef-cui)** · faceted, foobar2000-columns library browser plugin for the DeaDBeeF player. `C` · *complete v2.2.1*
 
 ### shared libraries & games
 
