@@ -59,6 +59,7 @@ local-first, or it doesn't ship.
 - **[vir-gtk](https://github.com/VirInvictus/vir-gtk)** · a shared gtk4 styling library for native linux apps, extracting the Kanagawa theme engine. `Rust · GTK4` · *complete v1.4.3*
 - **[Hearthfall](https://github.com/VirInvictus/Hearthfall)** · grimdark clan-survival for the terminal. seasonal turns, a fog-black map. engine is stdlib-only pure logic with no i/o, driven from a single seeded rng. `Python · Textual` · *archived · complete at v0.28.0*
 - **[opends](https://github.com/VirInvictus/opends)** · reverse-engineering toolkit for ssi's *dark sun* crpgs (1993–94): sixteen tools covering a disassembler for the undocumented gpl bytecode vm, gff/save editors, audio and midi extraction, and exe map tooling. `Rust · Python` · *active*
+- **[hex](https://github.com/VirInvictus/hex)** · a discworld mud plugin suite for blightmud, the first discworld ecosystem that client has had: gmcp vitals into a status area, quow database searches with tt_dw's query semantics, and room awareness keyed on the mud's forty-character room identifiers. `Lua · Python` · *active*
 
 the full codex, with screenshots and the long writeups, live at →
 **[virinvictus.github.io](https://virinvictus.github.io)**
